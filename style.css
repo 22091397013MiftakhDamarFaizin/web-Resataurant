@@ -6,7 +6,7 @@ body {
 
 #HOME {
     height: 100vh;
-    background-image: url(assets/bg-home.jpeg);
+    background-image: url(./assets/bg-home.jpeg);
     background-size: cover;
 }
 
