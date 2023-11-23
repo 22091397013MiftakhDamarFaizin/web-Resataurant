@@ -1,0 +1,92 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#HOME {
+    height: 100vh;
+    background-image: url(/assets/bg-home.jpeg);
+    background-size: cover;
+}
+
+#HOME::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Ubah nilai alpha untuk mengatur tingkat kegelapan */
+}
+
+#HOME > * {
+    position: relative;
+    /* Tambahan gaya jika diperlukan untuk elemen-elemen di dalam .HOME */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+
+.logo {
+    padding-top: 15px;
+    color: rgb(229, 102, 17);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.option {
+    display: flex;
+    gap: 20px;
+}
+
+.option li a {
+    list-style-type: none;
+    color: aliceblue;
+    font-weight: 600;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.option li a:hover {
+    color: rgb(229, 102, 17);
+}
+
+.hiro {
+    display: flex;
+    padding-top: 30px;
+    gap: 200px;
+}
+
+.ucapan-besar {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 45px;
+    padding-left: 50px;
+    max-width: 500px;
+}
+
+.ucapan-kecil {
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 18px;
+    padding-left: 50px;
+    max-width: 500px;
+}
+
+.gambar-hiro {
+    height: 400px;
+}
+
+.gambar-hiro {
+    animation: imgRotate 15s linear infinite;
+}
+
+@keyframes imgRotate { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
