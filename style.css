@@ -17,12 +17,11 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Ubah nilai alpha untuk mengatur tingkat kegelapan */
+    background-color: rgba(0, 0, 0, 0.8); 
 }
 
 #HOME > * {
     position: relative;
-    /* Tambahan gaya jika diperlukan untuk elemen-elemen di dalam .HOME */
 }
 
 .navbar {
@@ -41,10 +40,10 @@ body {
 .option {
     display: flex;
     gap: 20px;
+    list-style-type: none;
 }
 
 .option li a {
-    list-style-type: none;
     color: aliceblue;
     font-weight: 600;
     transition: all .3s;
