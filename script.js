@@ -24,25 +24,25 @@ class MenuItem {
 
 // Sample menu data
 const menuItems = [
-    new MenuItem("Nasi Goreng", 12000, "/assets/nasgor.png"),
-    new MenuItem("Mie Goreng", 12000, "/assets/miegoreng.png"),
-    new MenuItem("Rendang", 20000, "/assets/rendang.png"),
-    new MenuItem("Bakso", 10000, "/assets/bakso.png"),
-    new MenuItem("Spaghetti", 20000, "/assets/spaghetti.png"  ),
-    new MenuItem("Soup", 15000, "/assets/soup.png"),
-    new MenuItem("Sate Ayam", 15000, "/assets/sateayam.png"),
-    new MenuItem("Soto", 10000, "/assets/soto.png"),
-    new MenuItem("Rawon", 15000, "/assets/rawon.png"),
+    new MenuItem("Nasi Goreng", 12000, "./assets/nasgor.png"),
+    new MenuItem("Mie Goreng", 12000, "./assets/miegoreng.png"),
+    new MenuItem("Rendang", 20000, "./assets/rendang.png"),
+    new MenuItem("Bakso", 10000, "./assets/bakso.png"),
+    new MenuItem("Spaghetti", 20000, "./assets/spaghetti.png"  ),
+    new MenuItem("Soup", 15000, "./assets/soup.png"),
+    new MenuItem("Sate Ayam", 15000, "./assets/sateayam.png"),
+    new MenuItem("Soto", 10000, "./assets/soto.png"),
+    new MenuItem("Rawon", 15000, "./assets/rawon.png"),
     // Tambahkan lebih banyak item menu sesuai kebutuhan
 ];
 
 const menuItems2 = [
-    new MenuItem("Es Teh", 5000, "/assets/esteh.png"),
-    new MenuItem("Es Jeruk", 5000, "/assets/esjeruk.png"),
-    new MenuItem("Soda Susu", 7000, "/assets/sodasusu.png"),
-    new MenuItem("Aneka Jus", 8000, "/assets/jus.png"),
-    new MenuItem("Kopi", 4000, "/assets/kopi.png"  ),
-    new MenuItem("Dawet", 8000, "/assets/dawet.png"),
+    new MenuItem("Es Teh", 5000, "./assets/esteh.png"),
+    new MenuItem("Es Jeruk", 5000, "./assets/esjeruk.png"),
+    new MenuItem("Soda Susu", 7000, "./assets/sodasusu.png"),
+    new MenuItem("Aneka Jus", 8000, "./assets/jus.png"),
+    new MenuItem("Kopi", 4000, "./assets/kopi.png"  ),
+    new MenuItem("Dawet", 8000, "./assets/dawet.png"),
     // Tambahkan lebih banyak item menu sesuai kebutuhan
 ];
 // Array untuk menyimpan item yang dipesan
