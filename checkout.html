@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="checkout-container">
+        <h2>Checkout</h2>
+        <div id="ordered-items"></div>
+        <div id="total-container"></div>
+        <p>Terima kasih atas pesanan Anda!</p>
+        <button onclick="backToMenu()">Kembali ke Menu</button>
+    </div>
+
+   
+    <script>
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Retrieve ordered items from localStorage
+    const orderedItems = JSON.parse(localStorage.getItem("orderedItems")) || [];
+
+    // Display ordered items on the checkout page
+    const orderedItemsContainer = document.getElementById("ordered-items");
+    let orderedItemsHtml = "<h2>Ordered Items:</h2>";
+
+    orderedItems.forEach(item => {
+        orderedItemsHtml += `<p>${item.name} x${item.quantity}: Rp ${item.price * item.quantity}</p>`;
+    });
+
+    orderedItemsContainer.innerHTML = orderedItemsHtml;
+
+    // Display total amount on the checkout page
+    const totalContainer = document.getElementById("total-container");
+    let totalHtml = "<h2>Total Pesanan:</h2>";
+
+    let totalAmount = 0;
+    orderedItems.forEach(item => {
+        const itemTotal = item.price * item.quantity;
+        // totalHtml += `<p>${item.name} x${item.quantity}: Rp ${itemTotal}</p>`;
+        totalAmount += itemTotal;
+    });
+
+    totalHtml += `<p>Total: Rp ${totalAmount}</p>`;
+    totalContainer.innerHTML = totalHtml;
+});
+
+// Function to go back to the main menu
+function backToMenu() {
+    window.location.href = "index.php";
+}
+
+        
+    </script>
+    
+</body>
+</html>
