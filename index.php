@@ -148,10 +148,6 @@ function getMenuMinuman() {
         <div id="ordered-items"></div>
         <div id="total-container"></div>
     </div>    
-
-    <div id="CONTACT">
-        <p>
-    </div>
     
     <script src="script.js"></script>
 </body>
