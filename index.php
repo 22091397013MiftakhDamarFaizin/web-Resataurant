@@ -1,8 +1,8 @@
 <?php
-$servername = "127.0.0.1"; // Ganti dengan nama server database Anda
-$username = "root"; // Ganti dengan username database Anda
-$password = ""; // Ganti dengan password database Anda
-$dbname = "menu"; // Ganti dengan nama database Anda
+$servername = "127.0.0.1"; 
+$username = "root"; 
+$password = ""; 
+$dbname = "menu"; 
 
 // Buat koneksi
 $conn = new mysqli($servername, $username, $password, $dbname);
